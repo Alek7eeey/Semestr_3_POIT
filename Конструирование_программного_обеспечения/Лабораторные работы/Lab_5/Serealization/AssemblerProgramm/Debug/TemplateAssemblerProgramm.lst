@@ -1,0 +1,156 @@
+Microsoft (R) Macro Assembler Version 14.33.31629.0	    09/22/22 23:26:06
+TemplateAssemblerProgramm.asm				     Page 1 - 1
+
+
+				.586P
+				.MODEL FLAT, STDCALL
+				includelib kernel32.lib
+
+				ExitProcess PROTO : DWORD
+				MessageBoxA PROTO : DWORD, : DWORD, : DWORD, : DWORD
+
+				.STACK 4096
+
+ 00000000			.CONST
+
+ 00000000			.DATA
+
+					; Template data
+ = 00000000			OK			EQU	0
+ 00000000 54 65 6D 70 6C	T_MES		DB "Template!", 0
+	   61 74 65 21 00
+ 0000000A 49 73 20 74 65	MES			DB "Is template of Assembler programm!"
+	   6D 70 6C 61 74
+	   65 20 6F 66 20
+	   41 73 73 65 6D
+	   62 6C 65 72 20
+	   70 72 6F 67 72
+	   61 6D 6D 21
+ 0000002C 00000000		HW			DD ?
+
+					; Import string data
+ 00000030 48 65 6C 6C 6F	FILESTR		DB "Hello", 0							; Example (Max size of str 127)
+	   00
+
+					; Import integer data
+ 00000036 00003A98		FILEINT		DD 15000								; Example
+
+ 0000003A 54 68 65 20 69	INTSTR		DB "The int number = ", 10 dup(0)		; dup равен кол-ву разрядов
+	   6E 74 20 6E 75
+	   6D 62 65 72 20
+	   3D 20
+	   0000000A [
+	    00
+	   ]
+
+ = 00000011			STROFF		EQU 17
+ = 00000004			INTSIZE		EQU 4									; Равно кол-ву разрядов числа минус 1
+
+ 00000000			.CODE
+
+ 00000000			main PROC
+					
+				; Template output
+
+ 00000000  6A 00			push OK
+ 00000002  68 00000000 R		push offset T_MES
+ 00000007  68 0000000A R		push offset MES
+ 0000000C  FF 35 0000002C R		push HW
+ 00000012  E8 00000000 E		call MessageBoxA
+
+				; Import-string output
+
+ 00000017  6A 00			push OK
+ 00000019  68 00000000 R		push offset T_MES
+ 0000001E  68 00000030 R		push offset FILESTR
+ 00000023  FF 35 0000002C R		push HW
+ 00000029  E8 00000000 E		call MessageBoxA
+
+				; Import-int output
+					
+ 0000002E  BB 0000000A			mov ebx, 10
+
+ 00000033  B9 00000004			mov ecx, INTSIZE
+ 00000038  BA 00000000			mov edx, 0
+ 0000003D  A1 00000036 R		mov eax, FILEINT	
+
+					.WHILE eax > 0
+
+ 00000044  BE 0000003A R			mov esi, offset INTSTR
+ 00000049  83 C6 11				add esi, STROFF
+ 0000004C  03 F1				add esi, ecx
+
+ 0000004E  F7 F3				div ebx
+
+ 00000050  88 16				mov [esi], dl
+ 00000052  80 06 30				add BYTE ptr [esi], 30h
+
+ 00000055  BA 00000000				mov edx, 0
+
+ 0000005A  49					dec ecx
+
+					.ENDW
+
+ 00000060  6A 00			push OK
+ 00000062  68 00000000 R		push offset T_MES
+ 00000067  68 0000003A R		push offset INTSTR
+ 0000006C  FF 35 0000002C R		push HW
+ 00000072  E8 00000000 E		call MessageBoxA
+
+ 00000077  6A FF			push - 1
+
+ 00000079  E8 00000000 E		call ExitProcess
+ 0000007E			main ENDP
+
+				end main
+Microsoft (R) Macro Assembler Version 14.33.31629.0	    09/22/22 23:26:06
+TemplateAssemblerProgramm.asm				     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+CONST  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'CONST'	 ReadOnly
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 Para	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000055 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 0000007E Para	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+MessageBoxA  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000007E Public STDCALL
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+FILEINT  . . . . . . . . . . . .	DWord	 00000036 _DATA	
+FILESTR  . . . . . . . . . . . .	Byte	 00000030 _DATA	
+HW . . . . . . . . . . . . . . .	DWord	 0000002C _DATA	
+INTSIZE  . . . . . . . . . . . .	Number	 00000004h   
+INTSTR . . . . . . . . . . . . .	Byte	 0000003A _DATA	
+MES  . . . . . . . . . . . . . .	Byte	 0000000A _DATA	
+OK . . . . . . . . . . . . . . .	Number	 00000000h   
+STROFF . . . . . . . . . . . . .	Number	 00000011h   
+T_MES  . . . . . . . . . . . . .	Byte	 00000000 _DATA	
+
+	   0 Warnings
+	   0 Errors

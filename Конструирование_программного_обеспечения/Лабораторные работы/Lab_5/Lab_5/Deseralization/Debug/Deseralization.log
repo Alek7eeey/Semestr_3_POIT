@@ -1,0 +1,26 @@
+﻿  AsmC.cpp
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(7,7): error C3646: data: неизвестный спецификатор переопределения
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(7,11): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(10,16): error C2061: синтаксическая ошибка: идентификатор "Data"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(12,9): error C2039: "data": не является членом "AsmConvenrter".
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(4): message : см. объявление "AsmConvenrter"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(12,16): error C2065: data: необъявленный идентификатор
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmC.cpp(15,72): error C2660: wcstombs_s: функция не принимает 4 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h(996,26): message : см. объявление "wcstombs_s"
+  main.cpp
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(7,7): error C3646: data: неизвестный спецификатор переопределения
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(7,11): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(10,16): error C2061: синтаксическая ошибка: идентификатор "Data"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(12,9): error C2039: "data": не является членом "AsmConvenrter".
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(4): message : см. объявление "AsmConvenrter"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(12,16): error C2065: data: необъявленный идентификатор
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\main.cpp(9,30): error C2665: AsmConvenrter::AsmConvenrter: ни одна из 3 перегрузок не может преобразовать все типы аргументов
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(20,1): message : может быть "AsmConvenrter::AsmConvenrter(AsmConvenrter &&)"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(20,1): message : или       "AsmConvenrter::AsmConvenrter(const AsmConvenrter &)"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\main.cpp(9,25): message : "AsmConvenrter::AsmConvenrter(const AsmConvenrter &)": невозможно преобразовать аргумент 1 из "Data" в "const AsmConvenrter &"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\main.cpp(9,30): message : Причина: невозможно преобразовать "Data" в "const AsmConvenrter"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\main.cpp(9,26): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\AsmConvert.h(20,1): message : см. объявление "AsmConvenrter::AsmConvenrter"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\main.cpp(9,30): message : при попытке сопоставить список аргументов "(Data)"
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5(n)\Lab_5\Deseralization\main.cpp(18,44): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+  Создание кода...

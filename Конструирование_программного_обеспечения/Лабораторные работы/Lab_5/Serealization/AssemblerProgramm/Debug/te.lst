@@ -1,0 +1,146 @@
+Microsoft (R) Macro Assembler Version 14.32.31332.0	    09/23/22 21:39:07
+te.asm							     Page 1 - 1
+
+
+				.586P
+				.MODEL FLAT, STDCALL
+				includelib kernel32.lib
+
+				ExitProcess PROTO : DWORD
+				MessageBoxA PROTO : DWORD, : DWORD, : DWORD, : DWORD
+
+				.STACK 4096
+
+ 00000000			.CONST
+
+ 00000000			.DATA
+
+				; Template data
+ = 00000000			OK			EQU	0
+ 00000000 54 65 6D 70 6C	T_MES		DB "Template!", 0
+	   61 74 65 21 00
+ 0000000A 49 73 20 74 65	MES			DB "Is template of Assembler programm!"
+	   6D 70 6C 61 74
+	   65 20 6F 66 20
+	   41 73 73 65 6D
+	   62 6C 65 72 20
+	   70 72 6F 67 72
+	   61 6D 6D 21
+ 0000002C 00000000		HW			DD ?
+
+					; Import string data
+ 00000030 74 77 73 74 00	FILESTR	 DB "twst", 0
+
+					; Import integer data
+ 00000035 00000004		FILEINT	 DD 4
+
+ 00000039 54 68 65 20 69	INTSTR		DB "The int number = ", 1 dup(0)
+	   6E 74 20 6E 75
+	   6D 62 65 72 20
+	   3D 20
+	   00000001 [
+	    00
+	   ]
+ = 00000011			STROFF		EQU 17
+ = 00000000			INTSIZE	EQU 0
+
+ 00000000			.CODE
+
+ 00000000			main PROC
+
+				; Import-string output
+
+ 00000000  6A 00		push OK
+ 00000002  68 00000000 R	push offset T_MES
+ 00000007  68 00000030 R	push offset FILESTR
+ 0000000C  FF 35 0000002C R	push HW
+ 00000012  E8 00000000 E	call MessageBoxA
+
+				; Import-int output
+
+ 00000017  BB 0000000A		mov ebx, 10
+
+ 0000001C  B9 00000000		mov ecx, INTSIZE
+ 00000021  BA 00000000		mov edx, 0
+ 00000026  A1 00000035 R	mov eax, FILEINT
+
+				.WHILE eax > 0
+
+ 0000002D  BE 00000039 R	mov esi, offset INTSTR
+ 00000032  83 C6 11		add esi, STROFF
+ 00000035  03 F1		add esi, ecx
+
+ 00000037  F7 F3		div ebx
+
+ 00000039  88 16		mov[esi], dl
+ 0000003B  80 06 30		add BYTE ptr[esi], 30h
+
+ 0000003E  BA 00000000		mov edx, 0
+
+ 00000043  49			dec ecx
+
+				.ENDW
+
+ 00000049  6A 00		push OK
+ 0000004B  68 00000000 R	push offset T_MES
+ 00000050  68 00000039 R	push offset INTSTR
+ 00000055  FF 35 0000002C R	push HW
+ 0000005B  E8 00000000 E	call MessageBoxA
+
+ 00000060  6A FF		push - 1
+
+ 00000062  E8 00000000 E	call ExitProcess
+ 00000067			main ENDP
+
+				end main
+Microsoft (R) Macro Assembler Version 14.32.31332.0	    09/23/22 21:39:07
+te.asm							     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+CONST  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'CONST'	 ReadOnly
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 Para	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 0000004B Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000067 Para	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+MessageBoxA  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000067 Public STDCALL
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+FILEINT  . . . . . . . . . . . .	DWord	 00000035 _DATA	
+FILESTR  . . . . . . . . . . . .	Byte	 00000030 _DATA	
+HW . . . . . . . . . . . . . . .	DWord	 0000002C _DATA	
+INTSIZE  . . . . . . . . . . . .	Number	 00000000h   
+INTSTR . . . . . . . . . . . . .	Byte	 00000039 _DATA	
+MES  . . . . . . . . . . . . . .	Byte	 0000000A _DATA	
+OK . . . . . . . . . . . . . . .	Number	 00000000h   
+STROFF . . . . . . . . . . . . .	Number	 00000011h   
+T_MES  . . . . . . . . . . . . .	Byte	 00000000 _DATA	
+
+	   0 Warnings
+	   0 Errors

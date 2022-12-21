@@ -1,0 +1,5 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (SerealizeProgram.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  app.cpp
+  S.cpp
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5\Serealization\SerealizeProgram\S.cpp(9,41): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+  SerealizeProgram.vcxproj -> D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_5\Serealization\Debug\SerializeProgram.exe

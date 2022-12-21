@@ -1,0 +1,152 @@
+Microsoft (R) Macro Assembler Version 14.33.31629.0	    09/23/22 02:30:59
+ASM.asm							     Page 1 - 1
+
+
+				.586P
+				.MODEL FLAT, STDCALL
+				includelib kernel32.lib
+
+				ExitProcess PROTO : DWORD
+				MessageBoxA PROTO : DWORD, : DWORD, : DWORD, : DWORD
+
+				.STACK 4096
+
+ 00000000			.CONST
+
+ 00000000			.DATA
+
+					; Import string data
+ 00000000 52 6F 77 20 52	FILESTR	 DB "Row Row fight the power, touch untouchable, break unbreakable, Row Row fight the power!", 0
+	   6F 77 20 66 69
+	   67 68 74 20 74
+	   68 65 20 70 6F
+	   77 65 72 2C 20
+	   74 6F 75 63 68
+	   20 75 6E 74 6F
+	   75 63 68 61 62
+	   6C 65 2C 20 62
+	   72 65 61 6B 20
+	   75 6E 62 72 65
+	   61 6B 61 62 6C
+	   65 2C 20 52 6F
+	   77 20 52 6F 77
+	   20 66 69 67 68
+	   74 20 74 68 65
+	   20 70 6F 77 65
+	   72 21 00
+
+					; Import integer data
+ 00000058 000007E6		FILEINT	 DD 2022
+
+ 0000005C 54 68 65 20 69	INTSTR		DB "The int number = ", 4 dup(0)
+	   6E 74 20 6E 75
+	   6D 62 65 72 20
+	   3D 20
+	   00000004 [
+	    00
+	   ]
+ = 00000011			STROFF		EQU 17
+ = 00000003			INTSIZE	EQU 3
+
+ 00000000			.CODE
+
+ 00000000			main PROC
+
+				; Import-string output
+
+				push OK
+ASM.asm(30) : error A2006:undefined symbol : OK
+				push offset T_MES
+ASM.asm(31) : error A2006:undefined symbol : T_MES
+ 00000000  68 00000000 R	push offset FILESTR
+				push HW
+ASM.asm(33) : error A2006:undefined symbol : HW
+ 00000005  E8 00000000 E	call MessageBoxA
+
+				; Import-int output
+
+ 0000000A  BB 0000000A		mov ebx, 10
+
+ 0000000F  B9 00000003		mov ecx, INTSIZE
+ 00000014  BA 00000000		mov edx, 0
+ 00000019  A1 00000058 R	mov eax, FILEINT
+
+				.WHILE eax > 0
+
+ 0000003E  BE 0000005C R	mov esi, offset INTSTR
+ 00000043  83 C6 11		add esi, STROFF
+ 00000046  03 F1		add esi, ecx
+
+ 00000048  F7 F3		div ebx
+
+ 0000004A  88 16		mov[esi], dl
+ 0000004C  80 06 30		add BYTE ptr[esi], 30h
+
+ 0000004F  BA 00000000		mov edx, 0
+
+ 00000054  49			dec ecx
+
+				.ENDW
+
+				push OK
+ASM.asm(61) : error A2006:undefined symbol : OK
+				push offset T_MES
+ASM.asm(62) : error A2006:undefined symbol : T_MES
+ 0000005A  68 0000005C R	push offset INTSTR
+				push HW
+ASM.asm(64) : error A2006:undefined symbol : HW
+ 0000005F  E8 00000000 E	call MessageBoxA
+
+ 00000064  6A FF		push - 1
+
+ 00000066  E8 00000000 E	call ExitProcess
+ 0000006B			main ENDP
+
+				end main
+Microsoft (R) Macro Assembler Version 14.33.31629.0	    09/23/22 02:30:59
+ASM.asm							     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+CONST  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'CONST'	 ReadOnly
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 Para	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000071 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000089 Para	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+MessageBoxA  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000089 Public STDCALL
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+FILEINT  . . . . . . . . . . . .	DWord	 00000058 _DATA	
+FILESTR  . . . . . . . . . . . .	Byte	 00000000 _DATA	
+INTSIZE  . . . . . . . . . . . .	Number	 00000003h   
+INTSTR . . . . . . . . . . . . .	Byte	 0000005C _DATA	
+STROFF . . . . . . . . . . . . .	Number	 00000011h   
+
+	   0 Warnings
+	   6 Errors

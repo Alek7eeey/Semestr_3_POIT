@@ -1,0 +1,41 @@
+*функция суммы
+number function sum(number x, number y)
+{
+new number z;
+z >> x + y;
+return z;
+};
+
+procedure fs (line a, line b)
+{
+ print a;
+ print b;
+};
+
+number function RemainderOfTheDivision(number a, number b)
+{
+	new number o = a % b;
+	return o;
+}
+
+*функция main
+newline;
+
+main
+{
+new number x >> 5;
+new number y >> 10;
+new number z >> sum(x,y);
+new line sa = 'how are you';
+new number size = lenght(sa);
+new line sb;
+copy(sb, sa);
+new line sc = 'hello';
+fs(sa,sc);
+x >> 1;
+y >> 5;
+print 'контрольный пример';
+print size;
+print sc;
+return 0;
+};

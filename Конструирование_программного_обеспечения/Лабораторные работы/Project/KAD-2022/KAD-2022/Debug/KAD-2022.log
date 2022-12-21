@@ -1,0 +1,28 @@
+﻿  AnalizerLex.cpp
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Project\KAD-2022\KAD-2022\AnalizerLex.cpp(705,62): warning C4302: приведение типов: усечение из "const _Elem *" к "char"
+          with
+          [
+              _Elem=char
+          ]
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Project\KAD-2022\KAD-2022\AnalizerLex.cpp(1018,61): warning C4302: приведение типов: усечение из "const _Elem *" к "char"
+          with
+          [
+              _Elem=char
+          ]
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Project\KAD-2022\KAD-2022\AnalizerLex.cpp(1330,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Project\KAD-2022\KAD-2022\AnalizerLex.cpp(1349,21): warning C4018: <: несоответствие типов со знаком и без знака
+  Error.cpp
+  FST.cpp
+  GRB.cpp
+  In.cpp
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Project\KAD-2022\KAD-2022\In.cpp(12,23): warning C4018: <: несоответствие типов со знаком и без знака
+  IT.cpp
+  KAD-2022.cpp
+  Log.cpp
+  LT.cpp
+  MFST.cpp
+  OutFile.cpp
+  Parm.cpp
+  Polish.cpp
+  Создание кода...
+  KAD-2022.vcxproj -> D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Project\KAD-2022\Debug\KAD-2022.exe

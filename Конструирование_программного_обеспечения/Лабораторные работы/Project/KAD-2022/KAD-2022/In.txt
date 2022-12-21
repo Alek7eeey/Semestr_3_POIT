@@ -1,0 +1,2 @@
+number f;
+new number b >> 5-3;

@@ -1,0 +1,5 @@
+﻿  SELab19.cpp
+C:\kusr2\kpo\lab7\SELab19\SELab19\SELab19.cpp(9,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\kusr2\kpo\lab7\SELab19\SELab19\SELab19.cpp(37,27): warning C4305: аргумент: усечение из "int" в "char"
+C:\kusr2\kpo\lab7\SELab19\SELab19\SELab19.cpp(37,20): warning C4309: аргумент: усечение константного значения
+  SELab19.vcxproj -> C:\kusr2\kpo\lab7\SELab19\x64\Debug\SELab19.exe

@@ -1,0 +1,4 @@
+﻿  LP_asm01c.cpp
+LP_asm01c.obj : error LNK2019: ссылка на неразрешенный внешний символ _getmax@8 в функции _main.
+LP_asm01c.obj : error LNK2019: ссылка на неразрешенный внешний символ _getmin@8 в функции _main.
+D:\studing\3 семестр\Конструирование_программного_обеспечения\Лабораторные работы\Lab_6(n)\Assembler\Debug\LP_asm01c.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
