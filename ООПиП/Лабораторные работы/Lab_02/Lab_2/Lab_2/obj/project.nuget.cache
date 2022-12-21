@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ujO5SmGAn/mljfwY+XpzaZrz9tj07JtrPhPemLwgnzkfQlaLR9BQOI3igzKSt6NlUiBN2ag5Wt3IdbqDVMKV1g==",
+  "success": true,
+  "projectFilePath": "D:\\studing\\3 семестр\\ООПиП\\Лабораторные работы\\Lab_02\\Lab_2\\Lab_2\\Lab_2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.build.tasks.git\\1.1.1\\microsoft.build.tasks.git.1.1.1.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.sourcelink.common\\1.1.1\\microsoft.sourcelink.common.1.1.1.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\microsoft.sourcelink.github\\1.1.1\\microsoft.sourcelink.github.1.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,30 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/clr/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <SOAP-ENV:Body>
+    <SOAP-ENC:Array id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab_13/Lab_13%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull" SOAP-ENC:arrayType="a1:CARTOONS[4]">
+      <item href="#ref-2" />
+      <item href="#ref-3" />
+      <item href="#ref-4" />
+      <item href="#ref-5" />
+    </SOAP-ENC:Array>
+    <a1:CARTOONS id="ref-2" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab_13/Lab_13%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+      <StartTIME id="ref-6">12:00</StartTIME>
+      <_name id="ref-7">Шрэк</_name>
+      <_country id="ref-8">США</_country>
+    </a1:CARTOONS>
+    <a1:CARTOONS id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab_13/Lab_13%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+      <StartTIME id="ref-9">11:00</StartTIME>
+      <_name id="ref-10">Том и Джери</_name>
+      <_country href="#ref-8" />
+    </a1:CARTOONS>
+    <a1:CARTOONS id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab_13/Lab_13%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+      <StartTIME id="ref-11">10:00</StartTIME>
+      <_name id="ref-12">Ледниковый период</_name>
+      <_country href="#ref-8" />
+    </a1:CARTOONS>
+    <a1:CARTOONS id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Lab_13/Lab_13%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+      <StartTIME id="ref-13">22:00</StartTIME>
+      <_name id="ref-14">Пивозаврики</_name>
+      <_country id="ref-15">Russia</_country>
+    </a1:CARTOONS>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

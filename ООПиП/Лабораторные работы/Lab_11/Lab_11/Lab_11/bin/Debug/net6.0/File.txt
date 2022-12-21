@@ -1,0 +1,17 @@
+Сборка:Lab_11, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+
+Публичный конструктор присутствует!
+
+Название метода: A
+Название метода: MyMethods
+Название метода: MyMethods1
+
+Информация про поля и свойства:
+Поле(свойство)[1] = a, тип = System.Int32, модификатор доступа: private
+Поле(свойство)[2] = f, тип = System.Char, модификатор доступа: public
+Поле(свойство)[3] = name, тип = System.String, модификатор доступа: public
+
+Интерфейс[1] = Base
+
+Методы: 
+public Int32 MyMethods(Int32, Double)

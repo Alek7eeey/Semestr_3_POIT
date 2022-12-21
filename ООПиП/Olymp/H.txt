@@ -1,0 +1,38 @@
+using System;
+
+namespace Olimp
+{
+    class Program
+    {
+        static bool isSquare(int n)
+        {
+            double sqr = Math.Sqrt(n);
+
+            return sqr == Math.Floor(sqr);
+        }
+        static int CountSquare(int n)
+        {
+            if (isSquare(n))
+            {
+                return 1;
+            }
+
+            int result = n;
+
+            // перебираем все положительные целые числа, меньшие квадратного корня из `n`
+            for (int i = 1; i * i < n; i++)
+            {
+                // повторить для `n-i×i` и обновить результат, если найдено меньшее значение
+                result = Math.Min(result, 1 + CountSquare(n - i * i));
+            }
+
+            return result;
+        }
+
+        public static void Main(string[] args)
+        {
+            int n = 63;
+            Console.WriteLine(CountSquare(n));
+        }
+    }
+}

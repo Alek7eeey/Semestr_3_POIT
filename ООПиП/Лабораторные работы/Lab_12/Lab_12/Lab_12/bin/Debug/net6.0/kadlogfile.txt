@@ -1,0 +1,69 @@
+
+24.10.2022 16:55:01 begin Main
+24.10.2022 16:55:01 GetInformationAboutDisks KADDiskInfo
+24.10.2022 16:55:01 FullPathToFile KADFileInfo
+24.10.2022 16:55:01 GetSizeExtensionName KADFileInfo
+24.10.2022 16:55:01 GetDateCreateAndChange KADFileInfo
+24.10.2022 16:55:02 GetCountOfFiles KADDirInfo
+24.10.2022 16:55:02 GetTimeOfCreate KADDirInfo
+24.10.2022 16:55:02 GetCountOfSubDir KADDirInfo
+24.10.2022 16:55:02 GetParentsDir KADDirInfo
+24.10.2022 16:55:02 GetFileAndDir KADFileManager
+24.10.2022 16:55:02 CreateDirAndFile KADFileManager
+24.10.2022 16:55:02 CopyFile KADFileManager
+24.10.2022 16:55:02 CreateDirAndCopyFile KADFileManager
+24.10.2022 16:55:02 Archive File KADFileManager
+24.10.2022 16:55:02 end Main
+
+
+24.10.2022 16:56:12 begin Main
+24.10.2022 16:56:12 GetInformationAboutDisks KADDiskInfo
+24.10.2022 16:56:12 FullPathToFile KADFileInfo
+24.10.2022 16:56:12 GetSizeExtensionName KADFileInfo
+24.10.2022 16:56:13 GetDateCreateAndChange KADFileInfo
+24.10.2022 16:56:13 GetCountOfFiles KADDirInfo
+24.10.2022 16:56:13 GetTimeOfCreate KADDirInfo
+24.10.2022 16:56:13 GetCountOfSubDir KADDirInfo
+24.10.2022 16:56:13 GetParentsDir KADDirInfo
+24.10.2022 16:56:13 GetFileAndDir KADFileManager
+24.10.2022 16:56:13 CreateDirAndFile KADFileManager
+24.10.2022 16:56:13 CopyFile KADFileManager
+24.10.2022 16:56:13 CreateDirAndCopyFile KADFileManager
+24.10.2022 16:56:13 Archive File KADFileManager
+24.10.2022 16:56:13 end Main
+
+
+24.10.2022 16:56:32 begin Main
+24.10.2022 16:56:32 GetInformationAboutDisks KADDiskInfo
+24.10.2022 16:56:32 FullPathToFile KADFileInfo
+24.10.2022 16:56:32 GetSizeExtensionName KADFileInfo
+24.10.2022 16:56:32 GetDateCreateAndChange KADFileInfo
+24.10.2022 16:56:32 GetCountOfFiles KADDirInfo
+24.10.2022 16:56:32 GetTimeOfCreate KADDirInfo
+24.10.2022 16:56:32 GetCountOfSubDir KADDirInfo
+24.10.2022 16:56:32 GetParentsDir KADDirInfo
+24.10.2022 16:56:33 GetFileAndDir KADFileManager
+24.10.2022 16:56:33 CreateDirAndFile KADFileManager
+24.10.2022 16:56:33 CopyFile KADFileManager
+24.10.2022 16:56:33 CreateDirAndCopyFile KADFileManager
+24.10.2022 16:56:33 Archive File KADFileManager
+24.10.2022 16:56:33 end Main
+
+
+24.10.2022 18:13:40 begin Main
+24.10.2022 18:13:40 GetInformationAboutDisks KADDiskInfo
+24.10.2022 18:13:40 FullPathToFile KADFileInfo
+24.10.2022 18:13:40 GetSizeExtensionName KADFileInfo
+24.10.2022 18:13:40 GetDateCreateAndChange KADFileInfo
+24.10.2022 18:13:40 GetCountOfFiles KADDirInfo
+24.10.2022 18:13:40 GetTimeOfCreate KADDirInfo
+24.10.2022 18:13:40 GetCountOfSubDir KADDirInfo
+24.10.2022 18:13:40 GetParentsDir KADDirInfo
+24.10.2022 18:13:40 GetFileAndDir KADFileManager
+24.10.2022 18:13:40 CreateDirAndFile KADFileManager
+24.10.2022 18:13:40 CopyFile KADFileManager
+24.10.2022 18:13:40 CreateDirAndCopyFile KADFileManager
+24.10.2022 18:13:40 Archive File KADFileManager
+24.10.2022 18:13:40 end Main
+
+

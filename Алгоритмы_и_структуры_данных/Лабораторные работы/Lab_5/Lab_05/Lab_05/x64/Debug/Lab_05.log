@@ -1,0 +1,3 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (Lab_05.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Prima.cpp
+  Lab_05.vcxproj -> D:\studing\3 семестр\Алгоритмы_и_структуры_данных\Лабораторные работы\Lab_5(n)\Lab_05\x64\Debug\Prima.exe

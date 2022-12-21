@@ -1,0 +1,31 @@
+using System;
+
+namespace Olimp
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            int[] arr = { 7, 3, 9, 1 };
+            string str ="";
+            int count;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                count = 0;
+                for(int j = i+1; j<arr.Length; j++)
+                {
+                    if (arr[i] > arr[j])
+                    {
+                        count++;
+                    }
+                }
+               str += count.ToString();
+                str += ", ";
+            }
+
+            Console.WriteLine(str);
+
+        }
+    }
+}

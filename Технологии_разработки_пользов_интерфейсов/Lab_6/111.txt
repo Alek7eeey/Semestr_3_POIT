@@ -1,0 +1,5 @@
+// свойства, которые описывают фигуру «треугольник с тремя линиями»
+let propsOfTriangleWithThreeLines = Object.keys(triangle2);
+propsOfTriangleWithThreeLines.forEach((prop) => {
+    console.log(prop);
+});
