@@ -1,0 +1,17 @@
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.csproj.AssemblyReference.cache
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.GeneratedMSBuildEditorConfig.editorconfig
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.AssemblyInfoInputs.cache
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.AssemblyInfo.cs
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.csproj.CoreCompileInputs.cache
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\bin\Debug\net6.0\Zadacha_5.exe
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\bin\Debug\net6.0\Zadacha_5.deps.json
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\bin\Debug\net6.0\Zadacha_5.runtimeconfig.json
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\bin\Debug\net6.0\Zadacha_5.dll
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\bin\Debug\net6.0\Zadacha_5.pdb
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.dll
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\refint\Zadacha_5.dll
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.pdb
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.genruntimeconfig.cache
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\ref\Zadacha_5.dll
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_5\Zadacha_5\obj\Debug\net6.0\Zadacha_5.csproj.CopyComplete

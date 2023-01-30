@@ -1,0 +1,15 @@
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\bin\Debug\net6.0\Zadachi_exam.exe
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\bin\Debug\net6.0\Zadachi_exam.deps.json
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\bin\Debug\net6.0\Zadachi_exam.runtimeconfig.json
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\bin\Debug\net6.0\Zadachi_exam.dll
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\bin\Debug\net6.0\Zadachi_exam.pdb
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\Zadachi_exam.csproj.AssemblyReference.cache
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\Zadachi_exam.GeneratedMSBuildEditorConfig.editorconfig
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\Zadachi_exam.AssemblyInfoInputs.cache
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\Zadachi_exam.AssemblyInfo.cs
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\Zadachi_exam.csproj.CoreCompileInputs.cache
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\Zadachi_exam.dll
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\refint\Zadachi_exam.dll
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\Zadachi_exam.pdb
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\Zadachi_exam.genruntimeconfig.cache
+D:\studing\3 семестр\Экзамены\ООП\Zadachi_exam\Zadachi_exam\obj\Debug\net6.0\ref\Zadachi_exam.dll

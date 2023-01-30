@@ -1,0 +1,15 @@
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\bin\Debug\net6.0\Zadacha_4.exe
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\bin\Debug\net6.0\Zadacha_4.deps.json
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\bin\Debug\net6.0\Zadacha_4.runtimeconfig.json
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\bin\Debug\net6.0\Zadacha_4.dll
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\bin\Debug\net6.0\Zadacha_4.pdb
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\Zadacha_4.csproj.AssemblyReference.cache
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\Zadacha_4.GeneratedMSBuildEditorConfig.editorconfig
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\Zadacha_4.AssemblyInfoInputs.cache
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\Zadacha_4.AssemblyInfo.cs
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\Zadacha_4.csproj.CoreCompileInputs.cache
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\Zadacha_4.dll
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\refint\Zadacha_4.dll
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\Zadacha_4.pdb
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\Zadacha_4.genruntimeconfig.cache
+D:\studing\3 семестр\Экзамены\ООП\Задачи\Zadacha_4\Zadacha_4\obj\Debug\net6.0\ref\Zadacha_4.dll
